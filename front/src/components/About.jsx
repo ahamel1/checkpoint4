@@ -1,10 +1,15 @@
 import React from "react";
 import { Flex } from "../mainStyle";
 import styled from "styled-components";
+import pp from "../images/alice.jpg";
 
 const PartOne = styled.img`
   flex-basis: 40%;
   margin-right: 3rem;
+
+  @media (max-width: 768px) {
+    height: 70%;
+  }
 `;
 
 const PartTwo = styled.p`
@@ -23,7 +28,7 @@ const PartTwo = styled.p`
 export default function About() {
   return (
     <Flex mobilefd mobilehgt W90 mt2>
-      <PartOne src="https://via.placeholder.com/600" alt="alice" />
+      <PartOne src={pp} alt="alice" />
       <PartTwo>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quam
         maxime veritatis aliquid esse tenetur natus magnam perspiciatis dolore,
