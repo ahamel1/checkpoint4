@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "./Navigation";
 
 import About from "./About";
+import AllProjects from "./AllProjects";
 
 export default function Home() {
   return (
@@ -10,6 +11,9 @@ export default function Home() {
         <Navigation />
         <About />
       </header>
+      <main>
+        <AllProjects />
+      </main>
     </>
   );
 }
