@@ -20,6 +20,16 @@ const ButtonNav = styled(Link)`
   font-size: 1rem;
   text-decoration: none;
   color: black;
+  &:hover {
+    color: #678a77;
+  }
+`;
+
+const LinkItem = styled.a`
+  color: black;
+  &:hover {
+    color: #678a77;
+  }
 `;
 
 export default function Navigation() {
@@ -27,34 +37,31 @@ export default function Navigation() {
     <NavContainer>
       <ContainerListItem flexb33>
         <ListItem>
-          <a
+          <LinkItem
             href="https://www.linkedin.com/in/alice-hamel-867060159/"
             rel="linkedin"
             target="noopener noreferrer"
-            style={{ color: "black" }}
           >
             <i class="fab fa-linkedin"></i>
-          </a>
+          </LinkItem>
         </ListItem>
         <ListItem>
-          <a
+          <LinkItem
             href="https://twitter.com/alicemcht"
-            style={{ color: "black" }}
             rel="twitter"
             target="noopener noreferrer"
           >
             <i class="fab fa-twitter-square"></i>
-          </a>
+          </LinkItem>
         </ListItem>
         <ListItem>
-          <a
+          <LinkItem
             href="https://github.com/ahamel1"
-            style={{ color: "black" }}
             rel="github"
             target="noopener noreferrer"
           >
             <i class="fab fa-github"></i>
-          </a>
+          </LinkItem>
         </ListItem>
       </ContainerListItem>
       <Flex flexb33 center mobilefb>
