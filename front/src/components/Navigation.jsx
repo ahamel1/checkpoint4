@@ -18,6 +18,8 @@ const ButtonNav = styled(Link)`
   border: none;
   background: none;
   font-size: 1rem;
+  text-decoration: none;
+  color: black;
 `;
 
 export default function Navigation() {
