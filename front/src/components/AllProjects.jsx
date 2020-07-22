@@ -8,10 +8,10 @@ export default function AllProjects() {
   return (
     <div>
       <TitleH2>Mes projets</TitleH2>
-      <Flex mobilefd>
-        <Project />
-        <Project2 />
-        <Project3 />
+      <Flex mobilefd se>
+        <Project linkTo="/NDEFans" />
+        <Project2 linkTo="/Arsenic-Cocktail" />
+        <Project3 linkTo="/Forope" />
       </Flex>
     </div>
   );
