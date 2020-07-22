@@ -8,7 +8,7 @@ const AnimeCard = styled(animated.div)`
   margin: 3rem;
   height: 60vh;
   border-radius: 5px;
-  background-image: url("https://img.aws.la-croix.com/2018/06/08/1200945479/Electrobeach-legrand-festival-musique-electronique-France-Barcares-Pyrenees-Orientales_0_1398_933.jpg");
+  background-image: url(https://www.soomeet.com/wp-content/uploads/location-salle-evenement-fete-soiree-cocktail-003.jpg);
   background-size: cover;
   background-position: center center;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
@@ -40,12 +40,14 @@ export default function Project() {
     config: { mass: 5, tension: 350, friction: 40 },
   }));
   return (
-    <AnimeCard
-      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-      onMouseLeave={() => set({ xys: [0, 0, 1] })}
-      style={{ transform: props.xys.interpolate(trans) }}
-    >
-      <TitleH3>NDEFans</TitleH3>
-    </AnimeCard>
+    <>
+      <AnimeCard
+        onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+        onMouseLeave={() => set({ xys: [0, 0, 1] })}
+        style={{ transform: props.xys.interpolate(trans) }}
+      >
+        <TitleH3>Arsenic Cocktail</TitleH3>
+      </AnimeCard>
+    </>
   );
 }

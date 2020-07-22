@@ -8,7 +8,7 @@ const AnimeCard = styled(animated.div)`
   margin: 3rem;
   height: 60vh;
   border-radius: 5px;
-  background-image: url("https://img.aws.la-croix.com/2018/06/08/1200945479/Electrobeach-legrand-festival-musique-electronique-France-Barcares-Pyrenees-Orientales_0_1398_933.jpg");
+  background-image: url("https://www.thebalancecareers.com/thmb/ZAlrGqlRcCrW6kLyrWYr_z7bGP8=/2121x1193/smart/filters:no_upscale()/GettyImages-513438257-0865015e17944a0f88c1ec923686525e.jpg");
   background-size: cover;
   background-position: center center;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
@@ -45,7 +45,7 @@ export default function Project() {
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans) }}
     >
-      <TitleH3>NDEFans</TitleH3>
+      <TitleH3>Forope</TitleH3>
     </AnimeCard>
   );
 }
