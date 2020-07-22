@@ -54,7 +54,7 @@ export default function Project({ linkTo }) {
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
         style={{ transform: props.xys.interpolate(trans) }}
       >
-        <TitleH3>NDEFans</TitleH3>
+        <TitleH3>Forope</TitleH3>
       </AnimeCard>
     </LinkContainer>
   );

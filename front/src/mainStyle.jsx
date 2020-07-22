@@ -60,7 +60,7 @@ export const TitleH1 = styled(Link)`
 
 export const TitleH2 = styled.h2`
   font-size: 2rem;
-  margin: 4rem 0 1rem 0;
+  margin: 4rem 0 2rem 0;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
