@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Flex = styled.div`
   display: flex;
@@ -8,6 +9,7 @@ export const Flex = styled.div`
   justify-content: ${(props) => props.flexend && "flex-end"};
   justify-content: ${(props) => props.center && "center"};
   justify-content: ${(props) => props.sb && "space-between"};
+  justify-content: ${(props) => props.se && "space-evenly"};
   margin-right: ${(props) => props.mr3 && "3rem"};
   margin-top: ${(props) => props.mt2 && "2rem"};
   margin-left: auto;
@@ -16,7 +18,7 @@ export const Flex = styled.div`
     margin-right: ${(props) => props.mobilemr && "1rem"};
     flex-basis: ${(props) => props.mobilefb && "60%"};
     flex-direction: ${(props) => props.mobilefd && "column"};
-    height: ${(props) => props.mobilehgt && "70vh"};
+    height: ${(props) => props.mobilehgt && "60%"};
   }
 `;
 
@@ -40,8 +42,11 @@ export const ContainerListItem = styled.ul`
   }
 `;
 
-export const TitleH1 = styled.h1`
+export const TitleH1 = styled(Link)`
   font-size: 2.6rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
   margin: 1.6rem 0;
   text-transform: uppercase;
   width: 100%;
@@ -55,7 +60,7 @@ export const TitleH1 = styled.h1`
 
 export const TitleH2 = styled.h2`
   font-size: 2rem;
-  margin: 4rem 0 2rem 0;
+  margin: 4rem 0 1rem 0;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
@@ -63,7 +68,7 @@ export const TitleH2 = styled.h2`
 
   @media (max-width: 768px) {
     font-size: 1rem;
-    margin-top: 15rem;
+    margin-top: 3rem;
   }
 `;
 
