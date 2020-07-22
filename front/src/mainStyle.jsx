@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Flex = styled.div`
   display: flex;
@@ -8,6 +9,7 @@ export const Flex = styled.div`
   justify-content: ${(props) => props.flexend && "flex-end"};
   justify-content: ${(props) => props.center && "center"};
   justify-content: ${(props) => props.sb && "space-between"};
+  justify-content: ${(props) => props.se && "space-evenly"};
   margin-right: ${(props) => props.mr3 && "3rem"};
   margin-top: ${(props) => props.mt2 && "2rem"};
   margin-left: auto;
@@ -40,8 +42,11 @@ export const ContainerListItem = styled.ul`
   }
 `;
 
-export const TitleH1 = styled.h1`
+export const TitleH1 = styled(Link)`
   font-size: 2.6rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
   margin: 1.6rem 0;
   text-transform: uppercase;
   width: 100%;
