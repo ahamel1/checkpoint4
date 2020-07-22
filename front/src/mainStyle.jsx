@@ -32,8 +32,8 @@ export const ContainerListItem = styled.ul`
 `;
 
 export const TitleH1 = styled.h1`
-  font-size: 2rem;
-  margin: 1rem 0;
+  font-size: 2.2rem;
+  margin: 2rem 0;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
