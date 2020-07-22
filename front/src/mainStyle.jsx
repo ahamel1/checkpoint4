@@ -54,7 +54,7 @@ export const TitleH1 = styled(Link)`
   letter-spacing: 2px;
 
   @media (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `;
 
