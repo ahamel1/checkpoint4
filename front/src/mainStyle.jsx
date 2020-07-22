@@ -74,7 +74,6 @@ export const TitleH3 = styled.h2`
   letter-spacing: 2px;
   text-shadow: grey 10px 0 6px;
   color: white;
-}
 
   @media (max-width: 768px) {
     font-size: 1rem;
