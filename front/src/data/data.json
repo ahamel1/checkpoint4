@@ -1,0 +1,17 @@
+{
+  "NDEFans": {
+    "title": "NDEFans",
+    "subtitle": "NDLFans est un site qui regroupe les fans du festival de la Nuit de l'Erdre.",
+    "content1": "Premier projet de groupe le sujet imposé était de trouver un site, un monument dans les alentours de l'ile de Nantes et d'en faire la promotion. Nous avions 3 jours pour trouver une idée, créer nos maquettes et coder. Notre groupe, composé de Mariana et d'Alan et moi-mếme, a décidé de voir les choses en grands et a fait un site dédié à ce fameux festival, connu pour pour rassembler chaque année plusieurs milliers de festivaliers sur 3 jours.",
+    "languages": "HTLML5 - CSS3",
+    "netlify": "https://ilfautlelien"
+  },
+
+  "Arsenic-Cocktail": {
+    "title": "Arsenic Cocktail",
+    "subtitle": "Vous ne savez plus quoi boire lors de vos soirées entre amis ? Laissez Arsenic Coctkail choisir pour vous...",
+    "content1": "La demande du client fictif était de pouvoir générer des cocktails aléatoirement et de pouvoir mettre en favoris celui qu'on voulait. Nous avions 1 mois pour proposer un design et répondre à son besoin. Notre groupe, composé de Marion, Brice et Erwan et moi-même, a travaillé avec les methodes agiles Scrum et avons donc du organiser notre temps en différent sprints. Après concertation, l'idée était donc de pouvoir faire une application web capable de génerer un coctkail aléatoire, mais aussi de pouvoir avoir des cocktails sans alcool ou avec un nombre défini d'ingrédients. Nous avions à notre porté une API qui regroupe plus de 400 ingrédients pour cocktail,   ",
+    "languages": "REACT - SEMANTIC UI - REACT SPRING",
+    "netlify": "https://ilfautlelien"
+  }
+}

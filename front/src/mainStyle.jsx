@@ -54,13 +54,13 @@ export const TitleH1 = styled(Link)`
   letter-spacing: 2px;
 
   @media (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `;
 
 export const TitleH2 = styled.h2`
   font-size: 2rem;
-  margin: 4rem 0 1rem 0;
+  margin: 4rem 0 2rem 0;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
