@@ -9,6 +9,7 @@ const PartOne = styled.img`
 
   @media (max-width: 768px) {
     height: 70%;
+    width: 100%;
   }
 `;
 
@@ -22,13 +23,22 @@ const PartTwo = styled.p`
   padding: 1rem;
   @media (max-width: 768px) {
     margin-top: 2rem;
+    width: 80%;
+  }
+`;
+
+const ContainerParts = styled.div`
+  @media (max-width: 768px) {
+    width: 90%;
   }
 `;
 
 export default function About() {
   return (
     <Flex mobilefd mobilehgt W90 mt2>
-      <PartOne src={pp} alt="alice" />
+      <ContainerParts>
+        <PartOne src={pp} alt="alice" />
+      </ContainerParts>
       <PartTwo>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quam
         maxime veritatis aliquid esse tenetur natus magnam perspiciatis dolore,
