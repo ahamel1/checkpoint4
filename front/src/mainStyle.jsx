@@ -23,6 +23,7 @@ export const Flex = styled.div`
 export const ListItem = styled.li`
   list-style: none;
   padding-left: 2rem;
+
   @media (max-width: 768px) {
     padding: 0;
   }
@@ -41,7 +42,7 @@ export const ContainerListItem = styled.ul`
 
 export const TitleH1 = styled.h1`
   font-size: 2.6rem;
-  margin: 2rem 0;
+  margin: 1.6rem 0;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
