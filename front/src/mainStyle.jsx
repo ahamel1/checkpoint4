@@ -18,7 +18,7 @@ export const Flex = styled.div`
     margin-right: ${(props) => props.mobilemr && "1rem"};
     flex-basis: ${(props) => props.mobilefb && "60%"};
     flex-direction: ${(props) => props.mobilefd && "column"};
-    height: ${(props) => props.mobilehgt && "70vh"};
+    height: ${(props) => props.mobilehgt && "60%"};
   }
 `;
 
@@ -60,7 +60,7 @@ export const TitleH1 = styled(Link)`
 
 export const TitleH2 = styled.h2`
   font-size: 2rem;
-  margin: 4rem 0 2rem 0;
+  margin: 4rem 0 1rem 0;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
@@ -68,7 +68,7 @@ export const TitleH2 = styled.h2`
 
   @media (max-width: 768px) {
     font-size: 1rem;
-    margin-top: 15rem;
+    margin-top: 3rem;
   }
 `;
 
