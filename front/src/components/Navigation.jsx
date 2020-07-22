@@ -57,10 +57,10 @@ export default function Navigation() {
           </a>
         </ListItem>
       </ContainerListItem>
-      <Flex center mobilefb>
+      <Flex flexb33 center mobilefb>
         <TitleH1>Alice Hamel</TitleH1>
       </Flex>
-      <Flex flexend mr3 mobilemr>
+      <Flex flexb33 flexend mr3 mobilemr>
         <ButtonNav to="/contact">Contact</ButtonNav>
       </Flex>
     </NavContainer>
