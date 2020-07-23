@@ -28,11 +28,18 @@ const Content = styled.p`
   }
 `;
 
+const BackLink = styled.a`
+  text-decoration: none;
+  margin: 1rem 2rem;
+  display: inline-block;
+  color: black;
+`;
 export default function DetailsProject() {
   const { name } = useParams();
   return (
     <>
       <Navigation />
+      <BackLink href="/">Retour</BackLink>
       <Container>
         <TitleH2>{Data[name].title}</TitleH2>
         <Content>
@@ -40,7 +47,7 @@ export default function DetailsProject() {
           {Data[name].content1}
         </Content>
         <Content>{Data[name].languages}</Content>
-        <Content>{Data[name].netlify}</Content>
+        <BackLink href="{Data[name].netlify}">Link</BackLink>
       </Container>
     </>
   );
