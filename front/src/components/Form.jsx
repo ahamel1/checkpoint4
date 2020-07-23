@@ -3,6 +3,46 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import styled from "styled-components";
 
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #badac9;
+  width: 50%;
+  height: 70vh;
+  margin: 2rem auto;
+  @media (max-width: 768px) {
+    width: 80%;
+    margin: 3rem auto;
+    height: 100%;
+  }
+`;
+
+const FormContainer = styled.form`
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  @media (max-width: 768px) {
+    margin: 2rem;
+    width: 80%;
+  }
+`;
+
+const Input = styled.input`
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  text-transform: uppercase;
+`;
+
+const InputBtn = styled(Input)`
+  background: #badac9;
+  &:hover {
+    background: #678a77;
+    color: white;
+  }
+`;
+
 export default function Form() {
   const send = () =>
     toast.success("Merci ! Je vous contacte le plus vite possible");
@@ -74,7 +114,7 @@ export default function Form() {
           draggable
           pauseOnHover
         />
-        <input
+        <Input
           type="text"
           name="firstname"
           placeholder="Prénom"
@@ -82,7 +122,7 @@ export default function Form() {
           value={firstname}
           required
         />
-        <input
+        <Input
           type="text"
           name="lastname"
           placeholder="Nom"
@@ -90,7 +130,7 @@ export default function Form() {
           value={lastname}
           required
         />
-        <input
+        <Input
           type="email"
           name="email"
           placeholder="Email"
@@ -98,14 +138,14 @@ export default function Form() {
           value={email}
           required
         />
-        <input
+        <Input
           type="tel"
           name="phone"
           placeholder="Téléphone"
           onChange={handleAddPhone}
           value={phone}
         />
-        <input
+        <Input
           type="textarea"
           name="message"
           placeholder="Un petit mot ?"
@@ -113,27 +153,8 @@ export default function Form() {
           value={message}
           required
         />
-        <input type="submit" value="Allez, c'est partie !" />
+        <InputBtn id="buttonform" type="submit" value="Envoyer" />
       </FormContainer>
     </Container>
   );
 }
-
-const Container = styled.div`
-  border: solid 2px #badac9;
-  width: 50%;
-  height: 70vh;
-  margin: 2rem auto;
-  @media (max-width: 768px) {
-    width: 80%;
-    margin: 2rem auto;
-    height: 100%;
-  }
-`;
-
-const FormContainer = styled.form`
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: 2rem auto;
-`;

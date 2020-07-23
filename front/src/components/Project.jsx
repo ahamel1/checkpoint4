@@ -22,7 +22,7 @@ const AnimeCard = styled(animated.div)`
 
   @media (max-width: 768px) {
     width: 80%;
-    margin: 3rem auto;
+    margin: 2rem auto;
   }
 `;
 
