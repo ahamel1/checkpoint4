@@ -35,7 +35,7 @@ const ContainerParts = styled.div`
 
 export default function About() {
   return (
-    <Flex mobilefd mobilehgt W90 mt2>
+    <Flex center mobilefd mobilehgt W90 mt2>
       <ContainerParts>
         <PartOne src={pp} alt="alice" />
       </ContainerParts>

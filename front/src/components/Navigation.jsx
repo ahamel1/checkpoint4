@@ -35,7 +35,7 @@ const LinkItem = styled.a`
 export default function Navigation() {
   return (
     <NavContainer>
-      <ContainerListItem flexb33>
+      <ContainerListItem flexb30>
         <ListItem>
           <LinkItem
             href="https://www.linkedin.com/in/alice-hamel-867060159/"
@@ -64,11 +64,15 @@ export default function Navigation() {
           </LinkItem>
         </ListItem>
       </ContainerListItem>
-      <Flex flexb33 center mobilefb>
-        <TitleH1 to="/">Alice Hamel</TitleH1>
-      </Flex>
-      <Flex flexb33 flexend mr3 mobilemr>
-        <ButtonNav to="/contact">Contact</ButtonNav>
+      <Flex center flexb70 mobilefd>
+        <Flex flexb50 center mobileml0>
+          <TitleH1 to="/">Alice Hamel</TitleH1>
+        </Flex>
+        <Flex flexend acenter se mr3 mobilemr>
+          <ButtonNav to="/about">About</ButtonNav>
+          <ButtonNav to="/projets">Projets</ButtonNav>
+          <ButtonNav to="/contact">Contact</ButtonNav>
+        </Flex>
       </Flex>
     </NavContainer>
   );

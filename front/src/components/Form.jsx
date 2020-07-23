@@ -11,6 +11,7 @@ const Container = styled.div`
   width: 50%;
   height: 70vh;
   margin: 2rem auto;
+  box-shadow: 1rem 1rem 1px 1px #badac9;
   @media (max-width: 768px) {
     width: 80%;
     margin: 3rem auto;
