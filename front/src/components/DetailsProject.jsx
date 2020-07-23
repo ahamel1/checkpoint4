@@ -30,9 +30,10 @@ const Content = styled.p`
 
 const BackLink = styled.a`
   text-decoration: none;
+  font-weight: bold;
   margin: 1rem 2rem;
   display: inline-block;
-  color: black;
+  color: #badac9;
 `;
 export default function DetailsProject() {
   const { name } = useParams();
@@ -47,7 +48,10 @@ export default function DetailsProject() {
           {Data[name].content1}
         </Content>
         <Content>{Data[name].languages}</Content>
-        <BackLink href="{Data[name].netlify}">Link</BackLink>
+        <BackLink href={Data[name].netlify} target="_blank">
+          A quoi ça ressemble ?{" "}
+          <span className="fas fa-arrow-circle-right"></span>
+        </BackLink>
       </Container>
     </>
   );

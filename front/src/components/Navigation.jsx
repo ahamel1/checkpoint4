@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Flex, ContainerListItem, ListItem, TitleH1 } from "../mainStyle";
+import cvPdf from "../data/CV 2019 ALTERNANCE.pdf";
 
 const NavContainer = styled.nav`
   display: flex;
@@ -15,6 +16,16 @@ const NavContainer = styled.nav`
 `;
 
 const ButtonNav = styled(Link)`
+  border: none;
+  background: none;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: #678a77;
+  }
+`;
+const ButtonNavLink = styled.a`
   border: none;
   background: none;
   font-size: 1rem;
@@ -64,13 +75,15 @@ export default function Navigation() {
           </LinkItem>
         </ListItem>
       </ContainerListItem>
-      <Flex center flexb70 mobilefd>
-        <Flex flexb50 center mobileml0>
+      <Flex center flexb70 mobilefd mobilemr>
+        <Flex center mobileml0>
           <TitleH1 to="/">Alice Hamel</TitleH1>
         </Flex>
         <Flex flexend acenter se mr3 mobilemr>
-          <ButtonNav to="/about">About</ButtonNav>
-          <ButtonNav to="/projets">Projets</ButtonNav>
+          <ButtonNavLink href="#mesprojets">Projets</ButtonNavLink>
+          <ButtonNavLink href={cvPdf} download>
+            <span className="fas fa-file-download"></span> CV
+          </ButtonNavLink>
           <ButtonNav to="/contact">Contact</ButtonNav>
         </Flex>
       </Flex>

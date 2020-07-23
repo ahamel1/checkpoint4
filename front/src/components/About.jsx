@@ -23,6 +23,7 @@ const PartTwo = styled.p`
   padding: 1rem;
   @media (max-width: 768px) {
     margin-top: 2rem;
+    margin-right: 0;
     width: 80%;
   }
 `;
@@ -35,7 +36,7 @@ const ContainerParts = styled.div`
 
 export default function About() {
   return (
-    <Flex center mobilefd mobilehgt W90 mt2>
+    <Flex center mobileacenter mobilemr0 mobilefd mobilehgt W90 mt2>
       <ContainerParts>
         <PartOne src={pp} alt="alice" />
       </ContainerParts>
