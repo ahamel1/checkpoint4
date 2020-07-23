@@ -6,7 +6,7 @@ import { Flex, TitleH2 } from "../mainStyle";
 
 export default function AllProjects() {
   return (
-    <div>
+    <div style={{ marginBottom: "3rem" }}>
       <TitleH2>Mes projets</TitleH2>
       <Flex mobilefd se>
         <Project linkTo="/NDEFans" />
