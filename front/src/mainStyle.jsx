@@ -68,7 +68,7 @@ export const TitleH2 = styled.h2`
 
   @media (max-width: 768px) {
     font-size: 1rem;
-    margin-top: 3rem;
+    margin-top: ${(props) => (props.mobilemt ? "4rem" : "3rem")};
   }
 `;
 
