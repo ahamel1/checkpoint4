@@ -33,6 +33,7 @@ const Input = styled.input`
   margin-bottom: 1rem;
   padding: 0.6rem;
   text-transform: uppercase;
+  border: 1px solid #badac9;
 `;
 
 const InputBtn = styled(Input)`
@@ -40,6 +41,7 @@ const InputBtn = styled(Input)`
   &:hover {
     background: #678a77;
     color: white;
+    transition: all 0.3s ease-out;
   }
 `;
 
