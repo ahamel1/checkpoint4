@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Flex, ContainerListItem, ListItem, TitleH1 } from "../mainStyle";
+import cvPdf from "../data/CV 2019 ALTERNANCE.pdf";
 
 const NavContainer = styled.nav`
   display: flex;
@@ -24,6 +25,16 @@ const ButtonNav = styled(Link)`
     color: #678a77;
   }
 `;
+const ButtonNavLink = styled.a`
+  border: none;
+  background: none;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: #678a77;
+  }
+`;
 
 const LinkItem = styled.a`
   color: black;
@@ -35,7 +46,7 @@ const LinkItem = styled.a`
 export default function Navigation() {
   return (
     <NavContainer>
-      <ContainerListItem flexb33>
+      <ContainerListItem flexb30>
         <ListItem>
           <LinkItem
             href="https://www.linkedin.com/in/alice-hamel-867060159/"
@@ -64,11 +75,17 @@ export default function Navigation() {
           </LinkItem>
         </ListItem>
       </ContainerListItem>
-      <Flex flexb33 center mobilefb>
-        <TitleH1 to="/">Alice Hamel</TitleH1>
-      </Flex>
-      <Flex flexb33 flexend mr3 mobilemr>
-        <ButtonNav to="/contact">Contact</ButtonNav>
+      <Flex center flexb70 mobilefd mobilemr>
+        <Flex center mobileml0>
+          <TitleH1 to="/">Alice Hamel</TitleH1>
+        </Flex>
+        <Flex flexend acenter se mr3 mobilemr>
+          <ButtonNavLink href="#mesprojets">Projets</ButtonNavLink>
+          <ButtonNavLink href={cvPdf} download>
+            <span className="fas fa-file-download"></span> CV
+          </ButtonNavLink>
+          <ButtonNav to="/contact">Contact</ButtonNav>
+        </Flex>
       </Flex>
     </NavContainer>
   );

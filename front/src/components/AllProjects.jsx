@@ -6,8 +6,10 @@ import { Flex, TitleH2 } from "../mainStyle";
 
 export default function AllProjects() {
   return (
-    <div style={{ marginBottom: "3rem" }}>
-      <TitleH2 mobilemt>Mes projets</TitleH2>
+    <div style={{ marginBottom: "9rem" }}>
+      <TitleH2 mobilemt id="mesprojets">
+        Mes projets
+      </TitleH2>
       <Flex mobilefd se>
         <Project linkTo="/NDEFans" />
         <Project2 linkTo="/Arsenic-Cocktail" />
