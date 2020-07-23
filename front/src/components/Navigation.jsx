@@ -42,7 +42,7 @@ export default function Navigation() {
             rel="linkedin"
             target="noopener noreferrer"
           >
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
           </LinkItem>
         </ListItem>
         <ListItem>
@@ -51,7 +51,7 @@ export default function Navigation() {
             rel="twitter"
             target="noopener noreferrer"
           >
-            <i class="fab fa-twitter-square"></i>
+            <i className="fab fa-twitter-square"></i>
           </LinkItem>
         </ListItem>
         <ListItem>
@@ -60,7 +60,7 @@ export default function Navigation() {
             rel="github"
             target="noopener noreferrer"
           >
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </LinkItem>
         </ListItem>
       </ContainerListItem>

@@ -48,6 +48,40 @@ app.post("/contact", (req, res) => {
   });
 });
 
+app.delete("/contact/:id", (req, res) => {
+  const idPerson = req.params.id;
+  connection.query("DELETE FROM person WHERE id= ?", idPerson, (err) => {
+    if (err) {
+      res.status(500).json({
+        message: "erreur",
+        error: err,
+      });
+    } else {
+      res.sendStatus(201);
+    }
+  });
+});
+
+app.put("/contact/:id", (req, res) => {
+  const idPerson = req.params.id;
+  const formData = req.body;
+  connection.query(
+    "UPDATE person SET ? WHERE id= ?",
+    [formData, idPerson],
+    (err, results) => {
+      if (err) {
+        console.log(err);
+        res.status(500).json({
+          message: "Erreur lors de l'enregistrement de vos données",
+          error: err,
+        });
+      } else {
+        res.sendStatus(201);
+      }
+    }
+  );
+});
+
 app.listen(port, (err) => {
   if (err) {
     throw new Error("Something bad happened...");
