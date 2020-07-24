@@ -36,7 +36,7 @@ const LinkContainer = styled(Link)`
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 200,
-  -(x - window.innerWidth / 10) / 400,
+  -(x - window.innerWidth / 1) / 200,
   1.04,
 ];
 const trans = (x, y, s) =>

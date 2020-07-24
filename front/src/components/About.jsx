@@ -41,13 +41,12 @@ export default function About() {
         <PartOne src={pp} alt="alice" />
       </ContainerParts>
       <PartTwo>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quam
-        maxime veritatis aliquid esse tenetur natus magnam perspiciatis dolore,
-        inventore, sit aspernatur! Adipisci dignissimos minus esse laudantium
-        veritatis incidunt assumenda. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Blanditiis perferendis repudiandae nam voluptates
-        perspiciatis commodi est voluptas sapiente sit fugit! Ullam unde quos,
-        modi velit ipsa provident deleniti? Nesciunt, rem.
+        Bienvenue sur mon site perso ! Crée sur deux jours lors d'un hackathon
+        mis en place par mon école, je vous présente ici les projets que j'ai
+        réalisé. Qui suis-je ? Je m'appelle Alice Hamel et je suis etudiante a
+        la Wild Code School. Après quelques années en faculté d'économie et de
+        gestion, j'ai décidé de suivre une nouvelle voie et de me former dans le
+        secteur du digital, plus particulièrement dans le développement web.
       </PartTwo>
     </Flex>
   );
