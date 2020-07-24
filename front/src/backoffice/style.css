@@ -1,0 +1,16 @@
+td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-paddingNone {
+  border-bottom: thick double #badac9;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+span.PrivateTabIndicator-root-3.PrivateTabIndicator-colorSecondary-5.MuiTabs-indicator.PrivateTabIndicator-vertical-6 {
+  background-color: #badac9;
+}
+
+h6 {
+  color: #678a77;
+}

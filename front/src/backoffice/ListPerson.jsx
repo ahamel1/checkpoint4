@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MaterialTable from "material-table";
+import "./style.css";
 
-export default function AwesomeList() {
+export default function ListPerson() {
   const [error, setError] = useState();
   const [state, setState] = useState({
     columns: [
@@ -36,6 +37,17 @@ export default function AwesomeList() {
           style={{ width: "80vw" }}
           title="Demandes de contact"
           columns={state.columns}
+          options={{
+            headerStyle: {
+              backgroundColor: "#badac9",
+              color: "white",
+              textTransform: "uppercase",
+              fontWeight: "bold",
+            },
+            cellStyle: {
+              borderBottom: "thick double #badac9",
+            },
+          }}
           data={state.data}
           editable={{
             onRowAdd: (newData) => {

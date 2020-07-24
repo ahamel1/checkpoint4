@@ -4,14 +4,12 @@ import Form from "./Form";
 import styled from "styled-components";
 
 const LinkBack = styled.a`
-  display: inline-block;
-  text-transform: uppercase;
   text-decoration: none;
-  color: black;
-  padding: 1rem;
-  &:hover {
-    color: #678a77;
-  }
+  font-weight: bold;
+  margin: 1rem 2rem;
+  display: inline-block;
+  color: #badac9;
+  text-transform: uppercase;
 `;
 
 export default function Contact() {

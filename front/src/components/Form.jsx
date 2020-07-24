@@ -49,7 +49,7 @@ const InputBtn = styled(Input)`
 export default function Form() {
   const send = () =>
     toast.success("Merci ! Je vous contacte le plus vite possible");
-  const errorForm = () => toast("Il y a un problème.");
+  const errorForm = () => toast.warning("Il y a un problème.");
 
   const [person, setPerson] = useState([]);
   // eslint-disable-next-line no-unused-vars
@@ -150,6 +150,15 @@ export default function Form() {
         />
         <Input
           type="textarea"
+          wrap="hard"
+          style={{
+            height: "10vw",
+            overflowWrap: "break-word",
+            overflowY: "auto",
+            textOverflow: "ellipsis",
+            overflow: "hidden",
+            whiteSpace: "nowrap",
+          }}
           name="message"
           placeholder="Un petit mot ?"
           onChange={handleAddMessage}

@@ -34,6 +34,7 @@ const BackLink = styled.a`
   margin: 1rem 2rem;
   display: inline-block;
   color: #badac9;
+  text-transform: uppercase;
 `;
 export default function DetailsProject() {
   const { name } = useParams();
