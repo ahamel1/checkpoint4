@@ -7,6 +7,7 @@ import Data from "../data/data.json";
 
 const Container = styled.div`
   border: solid 2px #badac9;
+  box-shadow: 1rem 1rem 1px 1px #badac9;
   width: 50%;
   height: 70vh;
   margin: 2rem auto;
