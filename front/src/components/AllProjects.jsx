@@ -2,7 +2,8 @@ import React from "react";
 import Project from "./Project";
 import Project2 from "./Project2";
 import Project3 from "./Project3";
-import { Flex, TitleH2 } from "../mainStyle";
+import { Flex } from "../mainStyle";
+import { TitleH2 } from "../titles";
 
 export default function AllProjects() {
   return (

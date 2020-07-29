@@ -7,10 +7,10 @@ const PartOne = styled.img`
   flex-basis: 40%;
   margin-right: 3rem;
 
-  @media (max-width: 768px) {
+  ${(props) => props.theme.mediaMax.small`
     height: 70%;
     width: 100%;
-  }
+  `}
 `;
 
 const PartTwo = styled.p`
@@ -21,17 +21,17 @@ const PartTwo = styled.p`
   border: solid 1px #badac9;
   margin-right: 3rem;
   padding: 1rem;
-  @media (max-width: 768px) {
+  ${(props) => props.theme.mediaMax.small`
     margin-top: 2rem;
     margin-right: 0;
     width: 80%;
-  }
+  `}
 `;
 
 const ContainerParts = styled.div`
-  @media (max-width: 768px) {
+  ${(props) => props.theme.mediaMax.small`
     width: 90%;
-  }
+  `}
 `;
 
 export default function About() {

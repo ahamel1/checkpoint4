@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 
 import About from "./About";
 import AllProjects from "./AllProjects";
+import Skills from "./Skills";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </header>
       <main>
         <AllProjects />
+        <Skills />
       </main>
     </>
   );

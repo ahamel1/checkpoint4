@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Flex, ContainerListItem, ListItem, TitleH1 } from "../mainStyle";
+import { Flex, ContainerListItem, ListItem } from "../mainStyle";
+import { TitleH1 } from "../titles";
 import cvPdf from "../data/CV 2019 ALTERNANCE.pdf";
 
 const NavContainer = styled.nav`
@@ -10,9 +11,9 @@ const NavContainer = styled.nav`
   align-items: center;
   width: 100%;
   background: #badac9;
-  @media (max-width: 768px) {
+  ${(props) => props.theme.mediaMax.small`
     padding: 1rem 0;
-  }
+  `}
 `;
 
 const ButtonNav = styled(Link)`

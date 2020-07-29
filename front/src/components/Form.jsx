@@ -12,21 +12,21 @@ const Container = styled.div`
   height: 70vh;
   margin: 2rem auto;
   box-shadow: 1rem 1rem 1px 1px #badac9;
-  @media (max-width: 768px) {
+  ${(props) => props.theme.mediaMax.small`
     width: 80%;
     margin: 3rem auto;
     height: 100%;
-  }
+  `}
 `;
 
 const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   width: 60%;
-  @media (max-width: 768px) {
+  ${(props) => props.theme.mediaMax.small`
     margin: 2rem;
     width: 80%;
-  }
+  `}
 `;
 
 const Input = styled.input`
