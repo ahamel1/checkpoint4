@@ -5,7 +5,7 @@
 @media screen and (max-width: 1200px) {
 	.bm-burger-button {
 		display: block;
-		position: fixed;
+		position: absolute;
 		width: 36px;
 		height: 30px;
 		left: 36px;

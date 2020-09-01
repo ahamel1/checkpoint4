@@ -35,6 +35,7 @@ export const Flex = styled.div`
 export const ListItem = styled.li`
 	list-style: none;
 	padding-left: 2rem;
+	margin-bottom: 0.5rem;
 
 	${(props) => props.theme.mediaMax.small`
     padding: 0;
@@ -42,12 +43,13 @@ export const ListItem = styled.li`
 `;
 
 export const ContainerListItem = styled.ul`
+	z-index: 1000;
+	position: fixed;
+	bottom: 2rem;
+	width: 100%;
 	display: flex;
-	flex-basis: ${(props) => props.flexb30 && "30%"};
-	margin-left: 2rem;
-	${(props) => props.theme.mediaMax.small`
-    margin-left: 1rem;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  `}
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 0.9rem;
+	font-weight: 500;
 `;
