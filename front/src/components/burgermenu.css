@@ -39,9 +39,13 @@
   */
 	.bm-menu-wrap {
 		position: fixed;
+		top: 0;
 		height: 100%;
 	}
 
+	.bm-overlay {
+		top: 0;
+	}
 	/* General sidebar styles */
 	.bm-menu {
 		background: #678a77;
