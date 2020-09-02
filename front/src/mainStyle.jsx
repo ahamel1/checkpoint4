@@ -34,22 +34,30 @@ export const Flex = styled.div`
 
 export const ListItem = styled.li`
 	list-style: none;
-	padding-left: 2rem;
+	padding-left: 1rem;
 	margin-bottom: 0.5rem;
 
 	${(props) => props.theme.mediaMax.small`
     padding: 0;
-  `}
+	`}
 `;
 
 export const ContainerListItem = styled.ul`
 	z-index: 1000;
 	position: fixed;
-	bottom: 2rem;
+	bottom: 5rem;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	font-size: 0.9rem;
 	font-weight: 500;
+
+	${(props) => props.theme.mediaMin.xxLarge`
+	bottom: 9rem;
+	`};
+
+	${(props) => props.theme.mediaMax.xLarge`
+	bottom: 5rem;
+	`};
 `;
