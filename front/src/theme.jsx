@@ -28,6 +28,10 @@ const mediaMin = Object.keys(sizes).reduce((acc, label) => {
 }, {});
 
 export default {
+	blue: "#737DC2",
+	orange: "#FF6B35",
+	beige: "#EBE9EC",
+	violet: "#A7ADDB",
 	mediaMax,
 	mediaMin,
 };

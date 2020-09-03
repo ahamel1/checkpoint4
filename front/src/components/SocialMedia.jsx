@@ -3,10 +3,14 @@ import { ContainerListItem, ListItem } from "../mainStyle";
 import styled from "styled-components";
 
 const LinkItem = styled.a`
-	color: black;
+	color: ${(props) => props.theme.blue};
 	&:hover {
-		color: #678a77;
+		color: ${(props) => props.theme.orange};
 	}
+
+	${(props) => props.theme.mediaMax.xSmall`
+	color: ${(props) => props.theme.beige};
+	`};
 `;
 
 export default function SocialMedia() {

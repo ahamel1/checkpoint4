@@ -8,11 +8,11 @@ const Container = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: solid 2px #badac9;
+	border: solid 2px ${(props) => props.theme.blue};
 	width: 50%;
 	height: 70vh;
 	margin: 2rem auto;
-	box-shadow: 1rem 1rem 1px 1px #badac9;
+	box-shadow: 1rem 1rem 1px 1px ${(props) => props.theme.blue};
 	${(props) => props.theme.mediaMax.small`
     width: 80%;
     margin: 3rem auto;
@@ -41,13 +41,13 @@ const Input = styled.input`
 	margin-bottom: 1rem;
 	padding: 0.6rem;
 	text-transform: uppercase;
-	border: 1px solid #badac9;
+	border: 1px solid ${(props) => props.theme.blue}; ;
 `;
 
 const InputBtn = styled(Input)`
-	background: #badac9;
+	background: ${(props) => props.theme.blue};
 	&:hover {
-		background: #678a77;
+		background: ${(props) => props.theme.violet};
 		color: white;
 		transition: all 0.3s ease-out;
 	}

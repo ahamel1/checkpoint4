@@ -23,7 +23,7 @@ const PartTwo = styled.p`
 	flex-basis: 40%;
 	align-items: center;
 	text-align: center;
-	border: solid 1px #badac9;
+	border: solid 1px ${(props) => props.theme.orange};
 	padding: 1rem;
 
 	${(props) => props.theme.mediaMax.small`

@@ -74,7 +74,7 @@ export const ContainerListItem = styled.ul`
 	${(props) => props.theme.mediaMax.xSmall`
 	flex-direction : row;
 	border-radius : 2rem;
-	background : rgba(185, 218, 200, 0.43);
+	background : rgba(115,125,194,0.41);
 	width: 30%;
 	padding: 0.7rem;
 	top:0.2rem;

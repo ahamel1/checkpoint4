@@ -11,7 +11,7 @@ const NavContainer = styled.nav`
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	background: #badac9;
+	background-color: ${(props) => props.theme.blue};
 	${(props) => props.theme.mediaMax.small`
     padding: 1rem 0;
   `}
@@ -22,9 +22,9 @@ const ButtonNav = styled(Link)`
 	background: none;
 	font-size: 1rem;
 	text-decoration: none;
-	color: black;
+	color: ${(props) => props.theme.beige};
 	&:hover {
-		color: #678a77;
+		color: ${(props) => props.theme.violet};
 	}
 `;
 const ButtonNavLink = styled.a`
@@ -32,9 +32,9 @@ const ButtonNavLink = styled.a`
 	background: none;
 	font-size: 1rem;
 	text-decoration: none;
-	color: black;
+	color: ${(props) => props.theme.beige};
 	&:hover {
-		color: #678a77;
+		color: ${(props) => props.theme.violet};
 	}
 `;
 
@@ -47,7 +47,6 @@ export default function Navigation() {
 					<TitleH1 to="/">Alice Hamel</TitleH1>
 				</Flex>
 				<Flex flexend acenter se mr3 mobilemr mobilebm>
-					<ButtonNavLink href="#mesprojets">Projets</ButtonNavLink>
 					<ButtonNavLink href={cvPdf} download>
 						<span className="fas fa-file-download"></span> CV
 					</ButtonNavLink>
