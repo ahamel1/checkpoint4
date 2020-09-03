@@ -40,6 +40,10 @@ export const ListItem = styled.li`
 	${(props) => props.theme.mediaMax.small`
     padding: 0;
 	`}
+
+	${(props) => props.theme.mediaMax.xSmall`
+	margin-bottom: 0;
+	`}
 `;
 
 export const ContainerListItem = styled.ul`
@@ -50,8 +54,6 @@ export const ContainerListItem = styled.ul`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	font-size: 0.9rem;
-	font-weight: 500;
 
 	${(props) => props.theme.mediaMin.xxLarge`
 	bottom: 9rem;
@@ -59,5 +61,16 @@ export const ContainerListItem = styled.ul`
 
 	${(props) => props.theme.mediaMax.xLarge`
 	bottom: 5rem;
+	`};
+
+	${(props) => props.theme.mediaMax.xSmall`
+	flex-direction : row;
+	border-radius : 2rem;
+	background : rgba(185, 218, 200, 0.43);
+	width: 30%;
+	padding: 0.7rem;
+	top:0.2rem;
+	bottom: inherit;
+	right:1rem;
 	`};
 `;

@@ -18,7 +18,7 @@ export default function SocialMedia() {
 					rel="linkedin"
 					target="noopener noreferrer"
 				>
-					<i className="fab fa-linkedin fa-lg"></i>
+					<i className="fa fa-linkedin fa-lg"></i>
 				</LinkItem>
 			</ListItem>
 			<ListItem>
@@ -27,7 +27,7 @@ export default function SocialMedia() {
 					rel="twitter"
 					target="noopener noreferrer"
 				>
-					<i className="fab fa-twitter-square fa-lg"></i>
+					<i className="fa fa-twitter fa-lg"></i>
 				</LinkItem>
 			</ListItem>
 			<ListItem>
