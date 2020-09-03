@@ -20,6 +20,7 @@ export const Flex = styled.div`
 	margin-right: ${(props) => props.mr3 && "3rem"};
 	margin-top: ${(props) => props.mt2 && "2rem"};
 	margin-left: auto;
+	margin-right: auto;
 	margin-left: ${(props) => props.ml0 && "inherit"};
 
 	${(props) => props.theme.mediaMax.small`
@@ -29,7 +30,6 @@ export const Flex = styled.div`
 	
     margin-left: ${(props) => props.mobileml0 && "0"};
     margin-right: ${(props) => props.mobilemr && "1rem"};
-	margin-right: ${(props) => props.mobilemr0 && "0"};
 	
     justify-content: ${(props) => props.mobilecenter && "center"};
     align-items: ${(props) => props.mobileacenter && "center"};

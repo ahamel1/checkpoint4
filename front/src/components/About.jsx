@@ -35,7 +35,7 @@ const PartTwo = styled.p`
 
 export default function About() {
 	return (
-		<Flex center mobileacenter mobilemr0 mobilefd mobilehgt W90 mt2>
+		<Flex center mobileacenter mobilefd mobilehgt W90 mt2>
 			<ContainerParts>
 				<PartOne src={pp} alt="alice" />
 			</ContainerParts>
