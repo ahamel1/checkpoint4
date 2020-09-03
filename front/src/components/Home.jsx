@@ -3,17 +3,21 @@ import Navigation from "./Navigation";
 
 import About from "./About";
 import AllProjects from "./AllProjects";
+import Skills from "./Skills";
+import SocialMedia from "./SocialMedia";
 
 export default function Home() {
-  return (
-    <>
-      <header>
-        <Navigation />
-        <About />
-      </header>
-      <main>
-        <AllProjects />
-      </main>
-    </>
-  );
+	return (
+		<>
+			<SocialMedia />
+			<header>
+				<Navigation />
+				<About />
+			</header>
+			<main>
+				<AllProjects />
+				<Skills />
+			</main>
+		</>
+	);
 }

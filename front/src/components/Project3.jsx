@@ -2,7 +2,7 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { TitleH3 } from "../mainStyle";
+import { TitleH3 } from "../titles";
 
 const AnimeCard = styled(animated.div)`
   width: 100%;
@@ -20,23 +20,23 @@ const AnimeCard = styled(animated.div)`
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
   }
 
-  @media (max-width: 768px) {
+  ${(props) => props.theme.mediaMax.small`
     width: 80%;
     margin: 2rem auto;
-  }
+  `}
 `;
 
 const LinkContainer = styled(Link)`
   width: 25%;
   text-decoration: none;
-  @media (max-width: 768px) {
+  ${(props) => props.theme.mediaMax.small`
     width: 100%;
-  }
+  `}
 `;
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 200,
-  -(x - window.innerWidth / 10) / 400,
+  -(x - window.innerWidth / 1) / 200,
   1.04,
 ];
 const trans = (x, y, s) =>

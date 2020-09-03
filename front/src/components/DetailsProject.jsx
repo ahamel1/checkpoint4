@@ -2,19 +2,20 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import Navigation from "./Navigation";
-import { TitleH2 } from "../mainStyle";
+import { TitleH2 } from "../titles";
 import Data from "../data/data.json";
 
 const Container = styled.div`
   border: solid 2px #badac9;
+  box-shadow: 1rem 1rem 1px 1px #badac9;
   width: 50%;
   height: 70vh;
   margin: 2rem auto;
-  @media (max-width: 768px) {
+  ${(props) => props.theme.mediaMax.small`
     width: 80%;
     margin: 2rem auto;
     height: 100%;
-  }
+  `}
 `;
 
 const Content = styled.p`
@@ -23,9 +24,9 @@ const Content = styled.p`
   align-items: center;
   text-align: justify;
   padding: 2rem;
-  @media (max-width: 768px) {
+  ${(props) => props.theme.mediaMax.small`
     padding: 1rem;
-  }
+  `}
 `;
 
 const BackLink = styled.a`
@@ -34,6 +35,7 @@ const BackLink = styled.a`
   margin: 1rem 2rem;
   display: inline-block;
   color: #badac9;
+  text-transform: uppercase;
 `;
 export default function DetailsProject() {
   const { name } = useParams();
