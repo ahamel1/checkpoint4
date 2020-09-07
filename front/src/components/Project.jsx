@@ -5,57 +5,57 @@ import { Link } from "react-router-dom";
 import { TitleH3 } from "../titles";
 
 const AnimeCard = styled(animated.div)`
-  width: 100%;
-  height: 60vh;
-  border-radius: 5px;
-  background-image: url("https://img.aws.la-croix.com/2018/06/08/1200945479/Electrobeach-legrand-festival-musique-electronique-France-Barcares-Pyrenees-Orientales_0_1398_933.jpg");
-  background-size: cover;
-  background-position: center center;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.5s;
-  will-change: transform;
-  border: 15px solid white;
+	width: 100%;
+	height: 60vh;
+	border-radius: 5px;
+	background-image: url("https://img.aws.la-croix.com/2018/06/08/1200945479/Electrobeach-legrand-festival-musique-electronique-France-Barcares-Pyrenees-Orientales_0_1398_933.jpg");
+	background-size: cover;
+	background-position: center center;
+	box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+	transition: box-shadow 0.5s;
+	will-change: transform;
+	border: 15px solid white;
 
-  &:hover {
-    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
-  }
+	&:hover {
+		box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+	}
 
-  ${(props) => props.theme.mediaMax.small`
+	${(props) => props.theme.mediaMax.small`
     width: 80%;
     margin: 2rem auto;
   `}
 `;
 
 const LinkContainer = styled(Link)`
-  width: 25%;
-  text-decoration: none;
-  ${(props) => props.theme.mediaMax.small`
+	width: 25%;
+	text-decoration: none;
+	${(props) => props.theme.mediaMax.small`
     width: 100%;
   `}
 `;
 
 const calc = (x, y) => [
-  -(y - window.innerHeight / 2) / 200,
-  -(x - window.innerWidth / 10) / 200,
-  1.04,
+	-(y - window.innerHeight / 2) / 200,
+	-(x - window.innerWidth / 10) / 200,
+	1.04,
 ];
 const trans = (x, y, s) =>
-  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+	`perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 export default function Project({ linkTo }) {
-  const [props, set] = useSpring(() => ({
-    xys: [0, 0, 1],
-    config: { mass: 5, tension: 350, friction: 40 },
-  }));
-  return (
-    <LinkContainer to={linkTo}>
-      <AnimeCard
-        onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-        onMouseLeave={() => set({ xys: [0, 0, 1] })}
-        style={{ transform: props.xys.interpolate(trans) }}
-      >
-        <TitleH3>NDEFans</TitleH3>
-      </AnimeCard>
-    </LinkContainer>
-  );
+	const [props, set] = useSpring(() => ({
+		xys: [0, 0, 1],
+		config: { mass: 5, tension: 350, friction: 40 },
+	}));
+	return (
+		<LinkContainer to={linkTo}>
+			<AnimeCard
+				onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+				onMouseLeave={() => set({ xys: [0, 0, 1] })}
+				style={{ transform: props.xys.interpolate(trans) }}
+			>
+				<TitleH3>NDEFans</TitleH3>
+			</AnimeCard>
+		</LinkContainer>
+	);
 }
