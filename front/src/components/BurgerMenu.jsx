@@ -1,6 +1,6 @@
 import React from "react";
 import "./burgermenu.css";
-import cvPdf from "../data/CV 2019 ALTERNANCE.pdf";
+import cvPdf from "../data/CV ALTERNANCE WCS.pdf";
 import { Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 

@@ -12,6 +12,8 @@ export const Flex = styled.div`
 	align-items: ${(props) => props.acenter && "center"};
 	align-items: ${(props) => props.aend && "flex-end"};
 
+	text-align: ${(props) => props.txtcenter && "center"};
+
 	justify-content: ${(props) => props.flexend && "flex-end"};
 	justify-content: ${(props) => props.center && "center"};
 	justify-content: ${(props) => props.sb && "space-between"};
@@ -29,7 +31,6 @@ export const Flex = styled.div`
 	height: ${(props) => props.mobilehgt && "60%"};
 	
     margin-left: ${(props) => props.mobileml0 && "0"};
-    margin-right: ${(props) => props.mobilemr && "1rem"};
 	
     justify-content: ${(props) => props.mobilecenter && "center"};
     align-items: ${(props) => props.mobileacenter && "center"};

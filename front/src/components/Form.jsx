@@ -113,7 +113,7 @@ export default function Form() {
 	return (
 		<Container>
 			<Text>
-				Vous rechercher une personne curieuse et pleine de vie ? N'hésitez pas à
+				Vous recherchez une personne curieuse et pleine de vie ? N'hésitez pas à
 				me contacter !
 			</Text>
 			<FormContainer onSubmit={postPerson}>
