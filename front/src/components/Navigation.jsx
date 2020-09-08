@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Flex } from "../mainStyle";
 import { TitleH1 } from "../titles";
 import BurgerMenu from "./BurgerMenu";
-import cvPdf from "../data/CV 2019 ALTERNANCE.pdf";
+import cvPdf from "../data/CV ALTERNANCE WCS.pdf";
 
 const NavContainer = styled.nav`
 	display: flex;
