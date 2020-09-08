@@ -37,7 +37,17 @@ const ButtonNav = styled(Link)`
 		color: ${(props) => props.theme.violet};
 	}
 `;
-const ButtonNavLink = styled(ButtonNav)``;
+const ButtonNavLink = styled.a`
+	border: none;
+	background: none;
+	font-size: 1rem;
+	text-decoration: none;
+	color: ${(props) => props.theme.beige};
+	margin-right: 2rem;
+	&:hover {
+		color: ${(props) => props.theme.violet};
+	}
+`;
 
 export default function Navigation() {
 	return (
